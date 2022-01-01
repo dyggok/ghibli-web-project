@@ -1,0 +1,68 @@
+nav, footer{
+    background-color: rgba(56, 82, 123, 0.9);
+    background-position: center;
+    padding: 100px;
+    height: 80px;
+
+}
+
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: #00a651;
+}
+
+.aboutPhoto {
+    height: 300px;
+}
+
+#table {
+    border: 1px solid rgba(56, 82, 123, 0.9);
+}
+#table th, tr, td{
+    border: 1px solid rgba(56, 82, 123, 0.9);
+}
+
+#tabletd a{
+    color: black;
+}
+
+#filmdetailImage {
+    height: 600px;
+}
+
+.btn {
+    background-color:rgba(56, 82, 123, 0.9);
+    
+}
+
+.caption-img {
+    text-shadow: 2px 1px black;
+    
+}
+
+address > p > a {
+    color: black;
+
+}
+
+address > p > a:hover {
+    color: black;
+
+}
+
+.contact-us {
+    height: 500px;
+}
+
