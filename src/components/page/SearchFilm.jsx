@@ -8,13 +8,12 @@ function SearchFilm(props){
   const [q, setQ] = useState(urlParams.get('q'));
   const navigate = useNavigate();
   const [data, setData] = useState([]);
-  console.log(data)
 
   useEffect(() => {
     fetch('https://ghibliapi.herokuapp.com/films')
       .then(response => response.json())
       .then(json => {
-        setData(json);
+        setData(json);  
       })
     }, [])
 
@@ -40,9 +39,10 @@ function SearchFilm(props){
           <button type="submit" className="btn text-light btn-lg">Search</button>
         </form>
       </div>
-      {(q != null && 
+      {
         <div className="row">
-          {data.filter(d => d.title.toLowerCase().includes(q.toLowerCase())).map(
+          { ((q !== "" && q !== " ")  &&
+            data.filter(d => d.title.toLowerCase().includes(q)).map(
             result => 
             <div className="container col-md-3 m-5">
               <div className="card ">
@@ -55,9 +55,8 @@ function SearchFilm(props){
             </div>
             </div>
               
-            )}
-            </div>
-        )
+            ))}
+            </div> 
       }
       </>
     )

@@ -6,7 +6,7 @@ function FilmDetail(props){
     const inf = [{original_title: "Original Title", original_title_romanised: "Original Title (Romanised)", release_date: "Release Date", 
     producer: "Producer", director: "Director", rt_score: "Rate Score", running_time: "Running Time", description: "Description" }]
     const params = useParams();
-    console.log(data)
+    
 
     useEffect(() => {
       fetch('https://ghibliapi.herokuapp.com/films')
@@ -19,8 +19,6 @@ function FilmDetail(props){
         return(
           Object.keys(columns[0]).map(i => {
             return Object.keys(data).map(dataIndex => {
-              console.log(dataIndex);
-              console.log(i);
               if(dataIndex == i){
                 return <li><b>{columns[0][i]}: </b>{data[dataIndex]}</li>
               }
