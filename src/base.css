@@ -2,13 +2,14 @@ nav, footer{
     background-color: rgba(56, 82, 123, 0.9);
     background-position: center;
     padding: 100px;
-    height: 80px;
+    
 
 }
 
 
 
 a {
+    margin-top: 5px;
     color: white;
 }
 
@@ -40,7 +41,9 @@ a:hover {
 }
 
 #filmdetailImage {
+    float: right;
     height: 600px;
+
 }
 
 .btn {

@@ -23,12 +23,12 @@ return <>
             </div>
           </div>
           <div className="row">
-            <div className="col-md-4 mb-5 pb-5">
+            <div className="offset-lg-1 col mb-5 pb-5">
               {data.filter(d => d.title == "My Neighbor Totoro").map(d => 
                   <img src={d.movie_banner} className="aboutPhoto" alt="image"/>
               )}
             </div>
-            <div className="offset-1 col-md-7">
+            <div className="col">
               <p>Studio Ghibli was founded in 1985 by animated film directors Isao Takahata and Hayao Miyazaki, and has produced twenty-two feature-length films.  
                 Most Studio Ghibli films ranked number one at the box office in Japan in the year in which they were released.  
                 SPIRITED AWAY, directed by Hayao Miyazaki and released in 2001, is the all-time highest grossing film in Japan, earning over 30 billion yen at the box office.</p>

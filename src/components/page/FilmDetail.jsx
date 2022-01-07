@@ -33,16 +33,18 @@ function FilmDetail(props){
             return(
               <>
               <div className="col-md-12 fs-3 fw-bold text-center m-5">{d.title}</div>
-              <div className="row">
-                  <div className="offset-2 col-md-4 mb-5">
-                    <img src={d.image} alt="image" id="filmdetailImage"/>
+              
+              <div className="row justify-content-center">
+                  <div className=" col mb-5">
+                    <img src={d.image} alt="image" id="filmdetailImage" />
                   </div>
-                  <div className="col-md-6 ">
-                    <ul>
+                
+                    <ul className="col m-2"> 
                       {renderInformation(d, inf)}
                     </ul>
-                  </div>
+                  
               </div>
+           
               </>
             )
           })}
