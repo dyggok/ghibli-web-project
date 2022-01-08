@@ -30,7 +30,7 @@ function SearchFilm(props){
     return (
       <>
       <div className="container">
-        <form className="col-md-8 m-5" onSubmit={formHandler}>
+        <form className="col-md-8 my-5" onSubmit={formHandler}>
           <div className="mb-3 ">
             <label htmlFor="search" className="form-label fs-3">Search Ghibli Films</label>
             <input type="text" name="q" className="form-control" id="search" defaultValue={q}/>
@@ -44,8 +44,8 @@ function SearchFilm(props){
           { ((q !== "" && q !== " ")  &&
             data.filter(d => d.title.toLowerCase().includes(q)).map(
             result => 
-            <div className="container col-md-3 m-5">
-              <div className="card ">
+            <div className="container col-md-3 my-3">
+              <div className="card ml-3">
               <img src={result.image} className="card-img-top" alt="iamge" id="searchImage"/>
               <div className="card-body">
                 <h5 className="card-title">{result.title}</h5>
