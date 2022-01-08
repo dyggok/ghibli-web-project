@@ -1,11 +1,13 @@
 nav, footer{
     background-color: rgba(56, 82, 123, 0.9);
     background-position: center;
-    padding: 100px;
-    
+    padding: 10px;
 
 }
 
+footer {
+    padding: 125px;
+}
 
 a {
     margin-top: 5px;
@@ -25,7 +27,7 @@ a:hover {
 }
 
 .aboutPhoto {
-    height: 300px;
+    width: 100%;
 }
 
 #table {

@@ -8,7 +8,7 @@ function Nav(props){
   <nav className="navbar navbar-expand-sm">
     <div className="row">
     <Link to="/" className="fs-3 navbar-brand col">THE STUDIO GHIBLI COLLECTION</Link>
-      <ul className="navbar-nav col">
+      <ul className="navbar-nav col mx-1">
         {
           routes.filter(route => route.isNav == true).map((route, index) => 
             <li key={index}>

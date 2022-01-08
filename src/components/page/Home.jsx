@@ -44,7 +44,9 @@ function Home(props){
           
         </Carousel>
       </section>
-      <SearchFilm/>
+      <div className="container my-5 py-5">
+        <SearchFilm/>
+      </div>
       </>
     )
 }
