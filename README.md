@@ -1,7 +1,5 @@
 # Ghibli Web Project 
 
-![image](https://github.com/dyggok/ghibli-web-project/blob/master/images/127-1272278_totoro-by-paintedcats-d65susj-handmade-earrings-with-picture-from-my-neighbor-totoro.png)
-
 ## API : https://ghibliapi.herokuapp.com/
 
 ### Demo Link: https://ghiblicollection.netlify.app/
